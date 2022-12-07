@@ -41,7 +41,7 @@
   width: 250px;
   height: 100px;
   border: 2px groove #61dafb;
-  padding: 50px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
 }
 
 .todolist {
@@ -68,4 +68,18 @@
   background-color: teal;
   border: none;
   border-radius: 10px;
+}
+
+.todotitle {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.todoinner {
+  padding: 0px 0px 20px;
+}
+
+.todobtn {
+  align-items: center;
+  justify-content: center;
 }
