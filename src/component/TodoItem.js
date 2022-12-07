@@ -7,10 +7,8 @@ import React from "react";
 function TodoItem(props) {
   return (
     <div className="todo-item">
-      <div>
-        {props.item}
-        {props.item1}
-      </div>
+      <p>{props.item.title}</p>
+      <p>{props.item.content}</p>
     </div>
   );
 }

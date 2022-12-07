@@ -3,6 +3,7 @@ import "./App.css"; // 🔥 반드시 App.css 파일을 import 해줘야 합니�
 import "./component/container.css";
 import "./component/layout.css";
 import TodoBoard from "./component/TodoBoard";
+// import TodoItem from "./component/TodoItem";
 
 const App = () => {
   const [inputTitle, setInputTitle] = useState("");
@@ -12,16 +13,15 @@ const App = () => {
   //   const [todoListdo, setTodoListdo] = useState([]);
 
   const addItem = () => {
+    const newPlan = {
+      id: todoList.length + 1,
+      title: inputTitle,
+      content: inputContent,
+    };
     // console.log("im here", inputTitle, inputContent);
-    setTodoList([...todoList, inputTitle]);
+    setTodoList([...todoList, newPlan]);
     // setTodoListdo([...todoListdo, inputContent]);
     // setTodoList([...todoList, inputContent]);
-  };
-
-  const newPlan = {
-    id: plans.length + 1,
-    title: title,
-    content: content,
   };
 
   return (
@@ -51,7 +51,7 @@ const App = () => {
           </button>
         </div>
 
-        <TodoBoard todoList={todoList} todoListdo={todoListdo} />
+        <TodoBoard todoList={todoList} />
       </div>
     </div>
   );
