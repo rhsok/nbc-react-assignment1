@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+
+.todo-item {
+  width: 250px;
+  height: 100px;
+  border: 2px groove #61dafb;
+  padding: 50px 20px 20px 20px;
+}
+
+.todolist {
+  display: flex;
+  gap: 20px;
+}
+
+.add-form {
+  background-color: #eee;
+  border-radius: 15px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 0px 20px 0px 20px;
+  justify-content: space-between;
+}
+
+.addbtn {
+  display: flex;
+  align-items: flex-end;
+  height: 40px;
+  width: 140px;
+  background-color: teal;
+  border: none;
+  border-radius: 10px;
+}

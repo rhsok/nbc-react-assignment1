@@ -1,0 +1,9 @@
+.container {
+  border-style: groove;
+  border-color: black;
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+}
